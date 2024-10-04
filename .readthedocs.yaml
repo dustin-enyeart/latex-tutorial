@@ -23,11 +23,6 @@ build:
       - VIRTUAL_ENV=$READTHEDOCS_VIRTUALENV_PATH poetry install --with docs
 
 
-python: 
-  install: 
-    - method: poetry 
-      path: .
-
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
   configuration: docs/source/conf.py
