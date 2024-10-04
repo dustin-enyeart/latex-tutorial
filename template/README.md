@@ -1,6 +1,6 @@
 # Latex Template
 
-This is the template from [this]() Latex tutorial.
+This is the template from [this](https://latex-tutorial.readthedocs.io/en/latest/) Latex tutorial.
 
 To compile the file `main.tex`, run the following shell command. 
 
