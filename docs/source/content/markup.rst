@@ -48,6 +48,7 @@ Italics and bold are denoted with ``\emph`` and ``textbf``, respectively.
 
 The package ``amsthm`` is used for theorem environments that are automatically numbered. 
 
+
 .. code-block:: Latex
 
     \documentclass[12pt]{article}
@@ -84,6 +85,15 @@ The following is a more simplistic way to have a theorem and proof, but the theo
     \qed
 
     \end{document}
+
+
+Accents be be added by escaping a character before the letter, such as in the following example. 
+
+
+.. code-block:: latex
+
+    Poincar\'e, G\"odel and L'H\^optial and were mathematicians. 
+
 
 
 ====
