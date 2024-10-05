@@ -11,6 +11,7 @@ Text
 Paragraphs are separated by a blank line.
 Additional white space is ignored. For example, the following two code blocks will produce the same output. 
 
+
 .. code-block:: Latex
 
     This is a sentence.
@@ -26,7 +27,9 @@ Additional white space is ignored. For example, the following two code blocks wi
 
     This is another sentence. 
 
+
 Comments are denoted by a percent sign ``%``.
+
 
 .. code-block:: Latex
 
@@ -67,6 +70,7 @@ The package ``amsthm`` is used for theorem environments that are automatically n
 
 The following is a more simplistic way to have a theorem and proof, but the theorem will not be numbered. 
 
+
 .. code-block:: Latex
 
     \documentclass[12pt]{article}
@@ -81,6 +85,7 @@ The following is a more simplistic way to have a theorem and proof, but the theo
 
     \end{document}
 
+
 ====
 Math
 ====
@@ -88,6 +93,7 @@ Math
 Mathematical environments are used to markup mathematical expressions. 
 There are inline and out-of-line mathematical environments.
 Inline mathematical environments are denoted by surround it with dollar signs ``$``, and out-of-line mathematical environments are denoted by surrounding with ``\[`` and ``\]``. 
+
 
 .. code-block:: latex
 
@@ -102,8 +108,10 @@ Inline mathematical environments are denoted by surround it with dollar signs ``
     \]
     holds. 
 
+
 Subscripts and superscripts are indicated by an underscore ``_`` and a caret ``^``, respectively.
 By default, only the next character is used as the subscript or superscript, but multiple characters can be grouped by using curly braces ``{}``.
+
 
 .. code-block:: latex
 
@@ -113,7 +121,9 @@ By default, only the next character is used as the subscript or superscript, but
     \]
     holds. 
 
+
 In an out-of-line mathematical environment, the environment ``split`` can be used to align the lines. This is part of the package ``amsmath``. The ampersand ``&`` is used to denoted where the alignment occurs. In the following code block, the equal signs ``=`` are aligned. The double backslash ``\\`` is used to denote a new line.
+
 
 .. code-block:: Latex
 
@@ -128,6 +138,7 @@ In an out-of-line mathematical environment, the environment ``split`` can be use
     \]
     hold. 
 
+
 Mathematical symbols and Greek letters can be inserted using a backslash ``\`` and the name of the symbol, such as ``\geq`` for the greater-than-or-equal-to symbol or ``\alpha`` for the Greek letter alpha.
 
 
@@ -135,9 +146,11 @@ Mathematical symbols and Greek letters can be inserted using a backslash ``\`` a
 
     Examples of trigonometric functions are $\sin(x)$, $\cos(x)$, and $\tan(x)$.
 
+
 .. code-block:: Latex
 
     The Greek letter $\pi$ often denotes Archimedes's constant. 
+
 
 .. code-block:: Latex
 
@@ -166,7 +179,6 @@ An operator takes one or multiple arguments, such as the square root operator ``
     holds. 
 
 
-The size of brackets and parentheses can automatically formatted by using commands ``\left`` and ``\right`` with their symbols.
 Subscripts and superscript will automatically format correctly with sums :math:`\sum` and so on. 
 
 
@@ -174,9 +186,10 @@ Subscripts and superscript will automatically format correctly with sums :math:`
 
     The series
     \[
-        \sum_{n=1}^{\infinity} \left( \frac{1}{2} \right)^n
+        \sum_{n=1}^{\infinity} \frac{1}{2^n} 
     \] 
-    is geometric. 
+    converges. 
+
 
 .. code-block:: Latex
 
@@ -197,6 +210,43 @@ Text can be inserted into a mathematical environment using ``\mathrm``.
         \int_{0}^{1} x^2 \mathrm{d}x
     \]
     is $\frac{1}{3}$. 
+
+.. code-block:: latex
+
+    This
+    \[
+        \begin{pmatrix}
+        1 & 2 \\
+        3 & 4 \\
+        \end{pmatrix}
+    \]
+    is a matrix. 
+
+
+The size of brackets and parentheses can automatically formatted by using commands ``\left`` and ``\right`` with their symbols. The commands ``\left.`` or ``\right.`` are placeholders for matching and will not display anything at their location. In the second following code block, the the backlash ``\`` in ``\{`` is used to escape the bracket ``{`` because it is a reserved character. 
+
+
+.. code-block:: Latex
+
+    The series
+    \[
+        \sum_{n=1}^{\infinity} \left( \frac{1}{2} \right)^n
+    \] 
+    is geometric. 
+
+
+.. code-block:: Latex
+
+    This 
+    \[
+        \left\{ 
+            \begin{matrix}
+            0 & t < 0 \\
+            t & t \geq 0 \\
+            \end{matrix}
+        \right. 
+    \]
+    is a piecewise function. 
 
 
 A list of some common latex symbols is `here <https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf>`_. 

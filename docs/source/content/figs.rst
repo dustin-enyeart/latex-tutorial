@@ -9,13 +9,6 @@ Graphics
 ========
 
 The package ``graphicx`` is used to include images. 
-
-
-.. code-block:: latex
-
-    \usepackage{graphicx}
-
-
 The following code is includes the image whose filename is ``fig1`` with an image extension such as ``.png`` or ``.jpeg``. 
 A caption is optional. 
 
@@ -66,20 +59,30 @@ An entry can be blank.
     \end{table}
 
 
+===========
+Positioning
+===========
+
+The package ``float`` help with positioning figures and table. 
+For example, the ``[H]`` in the following example puts the figure directly where it appears in the text. 
+
+
+.. code-block:: latex
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{fig1}
+        \caption{An example of including an image.}
+    \end{figure}
+
+
 ======
 Shapes
 ======
 
 The package ``tikz`` is used to draw shapes.
-
-
-.. code-block:: latex
-
-    \usepackage{tikz-cd}
-
-
-
-The following is example example. 
+The following is an example. 
+Such an example could placed in a figure environment.  
 
 
 .. code-block:: latex
@@ -100,14 +103,8 @@ Commutative Diagrams
 ====================
 
 The package ``tikz-cd`` is used to draw commutative diagrams.
-
-
-.. code-block:: latex
-
-    \usepackage{tikz-cd}
-
-
-The following code is an example of a commutative diagram.
+The following code is an example of a commutative diagram. 
+Such an example could placed in a figure environment.  
 
 
 .. code-block:: latex

@@ -51,6 +51,7 @@ Some people may prefer the document classes ``amsart`` and ``amsbook`` from AMS 
 When publishing in a journal, the journal will provide a document class. 
 Such a file is denoted by the extension ``.cls``.
 Most people will never have to write their their own document class. 
+The command ``texdoc <class>`` will bring up the documentation for the document class ``<class>``.
 
 
 =========
