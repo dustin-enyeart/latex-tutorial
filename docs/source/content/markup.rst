@@ -92,7 +92,7 @@ Accents be be added by escaping a character before the letter, such as in the fo
 
 .. code-block:: latex
 
-    Poincar\'e, G\"odel and L'H\^optial and were mathematicians. 
+    Poincar\'e, G\"odel and L'H\^optial were mathematicians. 
 
 
 
