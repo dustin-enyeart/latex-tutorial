@@ -17,6 +17,6 @@ Latex Tutorial
 
    content/files
    content/markup
-   content/figs
    content/refs
+   content/figs
 

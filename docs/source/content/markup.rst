@@ -36,7 +36,7 @@ Comments are denoted by a percent sign ``%``.
     This is in the output. % This is a comment
 
 
-Italics and bold are denoted with ``\emph`` and ``textbf``, respectively. 
+Italics and bold are denoted with ``\emph{}`` and ``\textbf{}``, respectively. 
 
 
 .. code-block:: Latex
@@ -69,7 +69,7 @@ The package ``amsthm`` is used for theorem environments that are automatically n
     \end{document}
 
 
-The following is a more simplistic way to have a theorem and proof, but the theorem will not be numbered. 
+The following code block is a more simplistic way to have a theorem and proof, but the theorem will not be numbered. 
 
 
 .. code-block:: Latex
@@ -100,8 +100,7 @@ Accents be be added by escaping a character before the letter, such as in the fo
 Math
 ====
 
-Mathematical environments are used to markup mathematical expressions. 
-There are inline and out-of-line mathematical environments.
+In Latex, there are inline and out-of-line mathematical environments.
 Inline mathematical environments are denoted by surround it with dollar signs ``$``, and out-of-line mathematical environments are denoted by surrounding with ``\[`` and ``\]``. 
 
 
@@ -132,7 +131,7 @@ By default, only the next character is used as the subscript or superscript, but
     holds. 
 
 
-In an out-of-line mathematical environment, the environment ``split`` can be used to align the lines. This is part of the package ``amsmath``. The ampersand ``&`` is used to denoted where the alignment occurs. In the following code block, the equal signs ``=`` are aligned. The double backslash ``\\`` is used to denote a new line.
+In an out-of-line mathematical environment, the environment ``split`` can be used to align the lines. This is part of the package ``amsmath``. The ampersand ``&`` is used to denoted where the alignment occurs. In the following code block, the equal signs ``=`` are aligned. The double backslash ``\\`` is a line break. 
 
 
 .. code-block:: Latex
@@ -189,7 +188,7 @@ An operator takes one or multiple arguments, such as the square root operator ``
     holds. 
 
 
-Subscripts and superscript will automatically format correctly with sums :math:`\sum` and so on. 
+Subscripts and superscript will automatically format correctly with sums, limits and integral and so on. 
 
 
 .. code-block:: Latex
@@ -233,7 +232,7 @@ Text can be inserted into a mathematical environment using ``\mathrm``.
     is a matrix. 
 
 
-The size of brackets and parentheses can automatically formatted by using commands ``\left`` and ``\right`` with their symbols. The commands ``\left.`` or ``\right.`` are placeholders for matching and will not display anything at their location. In the second following code block, the the backlash ``\`` in ``\{`` is used to escape the bracket ``{`` because it is a reserved character. 
+The size of brackets and parentheses can be automatically formatted by using commands ``\left`` and ``\right`` with their symbols. The commands ``\left.`` or ``\right.`` are placeholders for matching and will not display anything at their location. In the second following code block, the the backlash ``\`` in ``\{`` is used to escape the bracket ``{`` because it is a reserved character. 
 
 
 .. code-block:: Latex
@@ -266,7 +265,7 @@ A list of some common latex symbols is `here <https://www.cmor-faculty.rice.edu/
 Custom Commands
 ===============
 
-Custom commands can be declared in the preamble with ``\newcommand`` or ``DeclareMathOperator``. If the a command is already defined, then ``\renewcommand`` is used instead. 
+Custom commands can be declared in the preamble with ``\newcommand`` or ``\DeclareMathOperator``. If the a command is already defined, then ``\renewcommand`` is used instead. 
 
 
 .. code-block:: Latex

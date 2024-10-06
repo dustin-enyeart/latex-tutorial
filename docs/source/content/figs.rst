@@ -12,8 +12,11 @@ The package ``graphicx`` is used to include images.
 The following code is includes the image whose filename is ``fig1`` with an image extension such as ``.png`` or ``.jpeg``. 
 A caption is optional. 
 
-
 .. code-block:: latex
+
+    \usepackage{graphicx}
+
+    ...
 
     \begin{figure}
         \centering
@@ -41,11 +44,15 @@ The command ``\hline`` draws a horizontal line.
 In a row, each entry is separated by an ampersand ``&``.
 And, each row is separated by a newline character ``\\``.
 Each row must have the same number of columns, and this must match repetitions of ``c`` in the ``tabular`` environment.
-The vertical lines ``|`` in ``c|c|c`` draws vertical lines between columns.
+Each vertical line ``|`` in ``c|c|c`` draws vertical lines between columns.
 An entry can be blank. 
 
 
 .. code-block:: latex
+
+    \usepackage{tikz}
+
+    ...
 
     \begin{table}
         \centering
@@ -68,6 +75,10 @@ For example, the ``[H]`` in the following example puts the figure directly where
 
 
 .. code-block:: latex
+
+    \usepackage{tikz-cd}
+
+    ...
 
     \begin{figure}[H]
         \centering

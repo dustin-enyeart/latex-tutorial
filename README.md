@@ -13,6 +13,7 @@ This tutorial can be cited with the following bibtex entry.
 ```bibtex
 @misc{enyeart2024latex,
       title={Latex Tutorial}, 
+      author={Enyeart, Dustin},
       year={2024},
       url={https://github.com/dustin-enyeart/latex-tutorial}
 }

@@ -9,7 +9,7 @@ Internal References
 ===================
 
 
-The command ``\label{}`` can be used to specify a numbered object, and the command ``\ref{}`` can be used to reference it. The label ``label{}`` can be put after anything that is automatically numbered and a descriptive string is its input. This descriptive string is then the input of ``ref{}``, which returns the number of the object.  
+The command ``\label{}`` can be placed after a numbered object, and, then, the command ``\ref{}`` can be used to reference it. The same descriptive string is passed to both. 
 
 
 .. code-block:: Latex
@@ -48,7 +48,8 @@ External References
 ===================
 
 
-For, external references, first they need to be defined in a separate Bibtex file. Such files are denoted by the extension ``.bib``. In a Bibtex, an entry is denoted by ``@`` followed by its type and then its formation. Anything outside of this environment is a comment. 
+For, external references need to be defined in a separate Bibtex file. Such files are denoted by the extension ``.bib``. In a Bibtex file, an entry is denoted by ``@`` followed by its type and then its formation. Anything outside of this environment is a comment. 
+
 
 .. code-block:: Bibtex
 
@@ -69,14 +70,16 @@ For, external references, first they need to be defined in a separate Bibtex fil
     Miscellaneous
     @misc{enyeart2024latex,
         title={Latex Tutorial}, 
+        author={Enyeart, Dustin},
         year={2024},
         url={https://github.com/dustin-enyeart/latex-tutorial}
-        }
+    }
 
-`Google Scholar <https://scholar.google.com/>`_ will provide the bibtex format for most references. 
 
-Then, the package ``biblatex`` is used to include the bibliography. 
-If above code block is saved as ``refs.bib``, then it can be included with ``\addbibresource{refs.bib}``. Citations are done with ``\cite{}``, and the bibliography is printed with ``\printbibliography``. 
+`Google Scholar <https://scholar.google.com/>`_ provides the bibtex format for most references. 
+
+The package ``biblatex`` is used to include the bibliography. 
+If the previous code block is saved as ``refs.bib``, then it can be included with ``\addbibresource{refs.bib}``. Citations are done with ``\cite{}``. The bibliography is printed with ``\printbibliography``. 
 
 
 .. code-block:: Latex
